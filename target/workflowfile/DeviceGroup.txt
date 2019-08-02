@@ -1,0 +1,62 @@
+---Get Save Search Details---
+Search Name=Group C
+Search Type=MANUAL_USER
+{"101":{"attribute":"s:isActive", "category":"s:Device", "criteria":"s:EQUALS", "value":"s:true", "value1":null}, "103":{"attribute":"s:lastReported", "category":"s:Device", "criteria":"s:BETWEEN", "value":"s:all", "value1":null}, "104":{"attribute":"s:deviceType", "category":"s:Device", "criteria":"s:IN", "value":"s:Desktop,Laptop,Smartphone,Tablet", "value1":null}, "105":{"attribute":"s:deviceType", "category":"s:Device", "criteria":"s:NOTIN", "value":"s:Desktop,Laptop,Smartphone,Tablet", "value1":null},"1":{"attribute":"s:deviceUserGroups.userGroup.completeAdId", "category":"s:Users", "criteria":"s:EQUALSIGNORECASE", "value":"s:ce9f9030-541d-4a39-8b87-42d1e4315303", "value1":null}, "condition":"s:and", "expression":"s:(101) and 103 and (104 or 105)  and (1)"}
+Search Name=DG1
+Search Type=Device
+{"101":{"attribute":"s:isActive","category":"s:Device","criteria":"s:EQUALS","value":"s:true","value1":null},"103":{"attribute":"s:lastReported","category":"s:Device","criteria":"s:BETWEEN","value":"s:6","value1":null},"104":{"attribute":"s:deviceType","category":"s:Device","criteria":"s:IN","value":"s:Smartphone,Tablet","value1":null},"condition":"s:and","expression":"s:(101) and 103 and (104)"}
+Search Name=GroupC
+Search Type=MANUAL_USER
+{"101":{"attribute":"s:isActive", "category":"s:Device", "criteria":"s:EQUALS", "value":"s:true", "value1":null}, "103":{"attribute":"s:lastReported", "category":"s:Device", "criteria":"s:BETWEEN", "value":"s:all", "value1":null}, "104":{"attribute":"s:deviceType", "category":"s:Device", "criteria":"s:IN", "value":"s:Desktop,Laptop,Smartphone,Tablet", "value1":null}, "105":{"attribute":"s:deviceType", "category":"s:Device", "criteria":"s:NOTIN", "value":"s:Desktop,Laptop,Smartphone,Tablet", "value1":null},"1":{"attribute":"s:deviceUserGroups.userGroup.completeAdId", "category":"s:Users", "criteria":"s:EQUALSIGNORECASE", "value":"s:4d9d6d18-b1ac-424d-8ab9-9d561f3fcf4c", "value1":null}, "condition":"s:and", "expression":"s:(101) and 103 and (104 or 105)  and (1)"}
+Search Name=Group A
+Search Type=MANUAL_USER
+{"101":{"attribute":"s:isActive", "category":"s:Device", "criteria":"s:EQUALS", "value":"s:true", "value1":null}, "103":{"attribute":"s:lastReported", "category":"s:Device", "criteria":"s:BETWEEN", "value":"s:all", "value1":null}, "104":{"attribute":"s:deviceType", "category":"s:Device", "criteria":"s:IN", "value":"s:Desktop,Laptop,Smartphone,Tablet", "value1":null}, "105":{"attribute":"s:deviceType", "category":"s:Device", "criteria":"s:NOTIN", "value":"s:Desktop,Laptop,Smartphone,Tablet", "value1":null},"1":{"attribute":"s:deviceUserGroups.userGroup.completeAdId", "category":"s:Users", "criteria":"s:EQUALSIGNORECASE", "value":"s:54f78efb-d843-436b-bf3b-80f9e169e053", "value1":null}, "condition":"s:and", "expression":"s:(101) and 103 and (104 or 105)  and (1)"}
+Search Name=Group B
+Search Type=MANUAL_USER
+{"101":{"attribute":"s:isActive", "category":"s:Device", "criteria":"s:EQUALS", "value":"s:true", "value1":null}, "103":{"attribute":"s:lastReported", "category":"s:Device", "criteria":"s:BETWEEN", "value":"s:all", "value1":null}, "104":{"attribute":"s:deviceType", "category":"s:Device", "criteria":"s:IN", "value":"s:Desktop,Laptop,Smartphone,Tablet", "value1":null}, "105":{"attribute":"s:deviceType", "category":"s:Device", "criteria":"s:NOTIN", "value":"s:Desktop,Laptop,Smartphone,Tablet", "value1":null},"1":{"attribute":"s:deviceUserGroups.userGroup.completeAdId", "category":"s:Users", "criteria":"s:EQUALSIGNORECASE", "value":"s:77560875-119f-4a00-92cb-b3227681e027", "value1":null}, "condition":"s:and", "expression":"s:(101) and 103 and (104 or 105)  and (1)"}
+Search Name=Custom attr
+Search Type=Device
+{"1":{"category":"s:Device Identity","attribute":"s:deviceCustomProperty.string1","criteria":"s:LIKE","value":"s:Test","value1":null},"2":{"category":"s:Users","attribute":"s:deviceUserAttr.string1","criteria":"s:LIKE","value":"s:Test","value1":null},"101":{"attribute":"s:isActive","category":"s:Device","criteria":"s:EQUALS","value":"s:true","value1":null},"103":{"attribute":"s:lastReported","category":"s:Device","criteria":"s:BETWEEN","value":"s:6","value1":null},"104":{"attribute":"s:deviceType","category":"s:Device","criteria":"s:IN","value":"s:Smartphone,Tablet","value1":null},"condition":"s:and","expression":"s:(101) and 103 and (104) and (1 and 2)"}
+
+***Get User Group Details***
+Saved Search Id=5958610
+Dsiplay Name=GroupC
+Complete AD Id=4d9d6d18-b1ac-424d-8ab9-9d561f3fcf4c
+Saved Search Id=5958607
+Dsiplay Name=Group A
+Complete AD Id=54f78efb-d843-436b-bf3b-80f9e169e053
+Saved Search Id=5958608
+Dsiplay Name=Group B
+Complete AD Id=77560875-119f-4a00-92cb-b3227681e027
+Saved Search Id=5958609
+Dsiplay Name=Group C
+Complete AD Id=ce9f9030-541d-4a39-8b87-42d1e4315303
+
+### Get Group Association Details ###
+Saved Search Id=5958608
+Entity Type=RULES
+Entity Value={"name":"R1","id":193126,"type":"R1"}
+Saved Search Id=5958607
+Entity Type=POLICY
+Entity Value={"name":"Global&#x20;Admin&#x20;policy","id":1023590,"type":"iOS MDM"}
+Saved Search Id=5958608
+Entity Type=POLICY
+Entity Value={"name":"Default&#x20;iOS&#x20;MDM&#x20;Policy","id":1023574,"type":"iOS MDM"}
+Saved Search Id=5958607
+Entity Type=NEW
+Entity Value=null
+Saved Search Id=5958608
+Entity Type=NEW
+Entity Value=null
+Saved Search Id=5958609
+Entity Type=NEW
+Entity Value=null
+Saved Search Id=5958610
+Entity Type=NEW
+Entity Value=null
+Saved Search Id=5958607
+Entity Type=POLICY
+Entity Value={"name":"GA&#x20;2","id":1023591,"type":"iOS MDM"}
+Saved Search Id=5958607
+Entity Type=POLICY
+Entity Value={"name":"GA3","id":1023593,"type":"iOS MDM"}
